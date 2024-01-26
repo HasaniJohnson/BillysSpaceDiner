@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Billy's Space Diner</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="headertxt">
+                <h1><a href="index.html">Billy's Space Diner</a></h1>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <h2>Reservations</h2>
+            <h3>Contact Us Today!</h3>
+            <p>
+                Required fields are marked with an asterisk *
+            </p>
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <label for="fname">*First Name </label>
+                <input type="text" name="fname" id="fname" required="required">
+                <label for="lname">*Last Name </label>
+                <input type="text" name="lname" id="lname" required="required">
+                <label for="myEmail">*E-mail</label>
+                <input type="email" name="myEmail" id="myEmail" required="required">
+                <label for="mobile">Phone Number</label>
+                <input type="tel" name="mobile" id="mobile" maxlength="12">
+                <label for="myDate">Reservation Date</label>
+                <input type="datetime-local" name="myDate" id="myDate">
+                <label for="myComments">*Comments<br></label>
+                <textarea name="myComments" id="myComments" cols="30" rows="2" required="required"></textarea>
+                <input type="submit">
+            </form>
+        </main>
+        <div id="contactinfo">
+            Billys Space Diner<br>
+            Orbiting Earth<br>
+            888-555-555<br>
+            <br>
+        </div>
+        <footer>
+            <small>
+                <i>
+                    Copyright &copy; 2023 BillysSpaceDiner.Inc<br>
+                    <a href="mailto:Billy_customerservice@gmail.com">
+                        Billy_customerservice@gmail.com
+                    </a>
+                </i>
+            </small>
+        </footer>
+    </div>
+    
+</body>
+</html>
